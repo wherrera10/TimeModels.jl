@@ -1,7 +1,22 @@
-julia 0.6
-Compat
-Distributions
-StatsBase
-TimeSeries 0.5.11
-Optim
-NLopt
+name = "TimeModels.jl"
+uuid = "7230201a-a60e-5a0a-9702-95a713655bf1"
+authors = ["William Herrera <wherrera@alahonua.com>"]
+version = "0.0.1"
+
+[deps]
+Distributions =
+StatsBase = 
+TimeSeries = 
+Optim = 
+NLopt = 
+
+[compat]
+julia = "1"
+
+[extras]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "Pkg"]
